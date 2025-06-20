@@ -1,0 +1,21 @@
+{
+  "version": "44.0.0",
+  "files": {
+    "a0a0e10fc03996e15fee96597016214f7f0507a108c10e6111a63c331a8a5231": {
+      "displayName": "BiospecimenStack Template",
+      "source": {
+        "path": "BiospecimenStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "417414404534-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-417414404534-us-east-1",
+          "objectKey": "a0a0e10fc03996e15fee96597016214f7f0507a108c10e6111a63c331a8a5231.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::417414404534:role/cdk-hnb659fds-file-publishing-role-417414404534-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

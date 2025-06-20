@@ -1,0 +1,80 @@
+{
+  "version": "44.0.0",
+  "artifacts": {
+    "BiospecimenStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "BiospecimenStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "BiospecimenStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://417414404534/us-east-1",
+      "properties": {
+        "templateFile": "BiospecimenStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::417414404534:role/cdk-hnb659fds-deploy-role-417414404534-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::417414404534:role/cdk-hnb659fds-cfn-exec-role-417414404534-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-417414404534-us-east-1/a0a0e10fc03996e15fee96597016214f7f0507a108c10e6111a63c331a8a5231.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "BiospecimenStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::417414404534:role/cdk-hnb659fds-lookup-role-417414404534-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "BiospecimenStack.assets"
+      ],
+      "metadata": {
+        "/BiospecimenStack/BiospecimenTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "BiospecimenTable58992A9C"
+            }
+          }
+        ],
+        "/BiospecimenStack/BiospecimenTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BiospecimenTable58992A9C"
+          }
+        ],
+        "/BiospecimenStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/BiospecimenStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/BiospecimenStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "BiospecimenStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  },
+  "minimumCliVersion": "2.1018.1"
+}

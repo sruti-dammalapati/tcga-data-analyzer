@@ -1,0 +1,7 @@
+pandas
+boto3
+psycopg2-binary  # For PostgreSQL
+python-dotenv
+sqlalchemy
+aws-cdk-lib
+constructs

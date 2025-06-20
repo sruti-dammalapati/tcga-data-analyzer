@@ -1,0 +1,7 @@
+{
+    "app": "python ddb_create.py",
+    "context": {
+      "@aws-cdk/core:newStyleStackSynthesis": "true",
+      "aws:profile": "personal"
+    }
+  }
