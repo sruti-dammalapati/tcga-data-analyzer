@@ -1,4 +1,4 @@
-# TCGA Data Analysis using AWS RDS and DynamoDB
+# TCGA Data Analysis
 
 ## Project Overview
 
